@@ -1,7 +1,7 @@
 class Integer:
     @classmethod
     def verify_coord(cls, coord):
-        if type(coord) != int:
+        if type(coord) is int:
             raise TypeError('Координата должна быть целым числом')
         
     def __set_name__(self, owner, name):
